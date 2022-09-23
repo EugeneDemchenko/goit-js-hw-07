@@ -16,19 +16,6 @@ console.log(pictureEl.join(''));
 
 galleryEl.insertAdjacentHTML('beforeend', [...pictureEl].join(''))
 
-galleryEl.style.display = 'flex'
-galleryEl.style.flexWrap = 'wrap'
-galleryEl.style.justifyContent = 'space-around'
-galleryEl.style.maxWidth = 'none'
-
-// galleryEl.addEventListener('click', onLinkClick);
-
-// function onLinkClick(e) {
-//     e.preventDefault();
-//     if (e.target.nodeName !== 'IMG') {
-//         return;
-//     }  
-// }   
 new SimpleLightbox('.gallery .gallery__item', {
     captionDelay: 250,
 });
