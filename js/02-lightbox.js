@@ -6,9 +6,9 @@ console.log(galleryItems);
 const galleryEl = document.querySelector('.gallery')
 
 const pictureEl = galleryItems.map(el => {
-  const newElement = `<a class='gallery__item' href='${el.original}'>
+  const newElement = `<li><a class='gallery__item' href='${el.original}'>
   <img class='gallery__image' src='${el.preview}' alt='${el.description}' title='${el.description}'/>
-  </a>`
+  </a></li>`
 return newElement
 })
 console.log(pictureEl.join(''));
