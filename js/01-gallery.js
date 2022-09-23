@@ -15,12 +15,6 @@ console.log(pictureEl.join(''));
 
 galleryEl.insertAdjacentHTML('beforeend', [...pictureEl].join(''))
 
-galleryEl.style.display = 'flex'
-galleryEl.style.flexWrap = 'wrap'
-galleryEl.style.justifyContent = 'space-around'
-galleryEl.classList = 'gallery__item'
-
-
 galleryEl.addEventListener('click', onLinkClick);
 
 function onLinkClick(e) {
