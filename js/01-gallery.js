@@ -25,11 +25,5 @@ function onLinkClick(e) {
   const newImage = e.target.dataset.source;
   const instance = basicLightbox.create(`<img src="${newImage}"'/>`)
   instance.show()
-  
-  document.addEventListener('keydown', event => {
-  if (event.code === 'Escape') {
-    instance.close();
-  }
-})
 }
 
